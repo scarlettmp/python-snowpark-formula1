@@ -95,7 +95,7 @@ from @formula1_stage/driver_standings.csv
 on_error='continue';
 
 --DRIVERS
-create or replace table formula1.raw.drivers (
+create or replace table formula1.rawdrivers (
 	DRIVER_ID NUMBER(38,0),
 	DRIVER_REF VARCHAR(16777216),
 	NUMBER VARCHAR(16777216),
