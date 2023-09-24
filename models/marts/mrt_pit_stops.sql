@@ -25,7 +25,7 @@ pit_stops_joined as (
         pit_stop_milliseconds,
         total_pit_stops_per_race
     from base_results
-    left join pit_stops
+    leftjoin pit_stops
         on base_results.race_id=pit_stops.race_id and base_results.driver_id=pit_stops.driver_id
 )
 select * from pit_stops_joined
