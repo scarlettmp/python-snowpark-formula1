@@ -15,7 +15,7 @@ expanded_lap_times_by_year as (
         lap,
         lap_time_milliseconds 
     from lap_times
-    left join races
+    leftjoin races
         on lap_times.race_id = races.race_id
     where lap_time_milliseconds is not null 
 )
